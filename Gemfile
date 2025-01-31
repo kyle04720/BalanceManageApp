@@ -56,3 +56,6 @@ group :development do
   gem "web-console"
 end
 
+gem 'concurrent-ruby', '1.3.4'
+
+gem 'dotenv-rails'

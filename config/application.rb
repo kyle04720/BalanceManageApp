@@ -38,5 +38,8 @@ module DbclassApp
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+    
+    config.time_zone = 'Tokyo'
+    config.active_record.default_timezone = :local
   end
 end
