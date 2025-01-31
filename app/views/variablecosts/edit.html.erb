@@ -1,0 +1,9 @@
+<h2>支出カテゴリ編集</h2>
+<%= form_with model: @variablecost, local: true do |form| %> 
+	<div class="">カテゴリ名</div>
+	<%= form.text_field :name, class: "item-text-field" %>
+
+	<div class="">説明</div>
+	<%= form.text_field :description, class: "item-text-field" %>
+	<%= form.submit "更新", class: "submit-btn" %>
+<% end %>

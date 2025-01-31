@@ -1,0 +1,16 @@
+<h2>支出カテゴリ詳細</h2>
+
+<%= link_to "編集", [:edit, @variablecost] %>
+<%= link_to "支出カテゴリ一覧に戻る", :variablecosts %>
+
+<table>
+    <tr>
+    <th>名称</th>
+    <td><%= @variablecost.name %></td>
+    </tr>
+
+    <tr>
+        <th>説明</th>
+        <td><%= @variablecost.description %></td>
+    </tr>
+</table>
