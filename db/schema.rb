@@ -10,8 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_01_31_060513) do
+ActiveRecord::Schema[8.0].define(version: 2025_02_01_075912) do
+  create_table "fixedcost_values", force: :cascade do |t|
+    t.integer "fixedcost_id", null: false
+    t.date "year_month"
+    t.integer "value"
+    t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "fixedcosts", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "name"
+    t.string "description"
+  end
+
+  create_table "income_values", force: :cascade do |t|
+    t.integer "income_id", null: false
+    t.date "year_month"
+    t.integer "value"
+    t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -19,10 +39,23 @@ ActiveRecord::Schema[8.0].define(version: 2025_01_31_060513) do
   create_table "incomes", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "name"
+    t.string "description"
+  end
+
+  create_table "variablecost_values", force: :cascade do |t|
+    t.integer "variablecost_id", null: false
+    t.date "year_month"
+    t.integer "value"
+    t.string "description"
+    t.datetime "created_at", precision: nil, null: false
+    t.datetime "updated_at", precision: nil, null: false
   end
 
   create_table "variablecosts", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "name"
+    t.string "description"
   end
 end
