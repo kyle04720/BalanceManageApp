@@ -23,7 +23,6 @@
 		<td><%= income_value.value.to_formatted_s(:delimited) %> 円</td>
 		<td><%= income_value.description %></td>
 		<td>
-		<%= link_to "編集", [:edit, income_value] %> |
 		<%= link_to "削除", income_value, method: :delete,
 			data: { confirm: "本当に削除しますか？"} %>
 		</td>

@@ -23,7 +23,6 @@
 		<td><%= fixedcost_value.value.to_formatted_s(:delimited) %> 円</td>
 		<td><%= fixedcost_value.description %></td>
 		<td>
-		<%= link_to "編集", [:edit, fixedcost_value] %> |
 		<%= link_to "削除", fixedcost_value, method: :delete,
 			data: { confirm: "本当に削除しますか？"} %>
 		</td>

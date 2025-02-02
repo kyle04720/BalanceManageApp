@@ -6,6 +6,7 @@ class IncomeValuesController < ApplicationController
 
   def show
     @income_value = IncomeValue.find(params[:id])
+    @form = Form::IncomeForm.new
   end
 
   def new

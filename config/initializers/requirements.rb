@@ -1,6 +1,6 @@
-# Import to "Form::IncomeValue"
-require Rails.root.join("app/models/form/income_value.rb")
-# Import to "Form::FixedcostValue"
-require Rails.root.join("app/models/form/fixedcost_value.rb")
-# Import to "Form::VariablecostValue"
-require Rails.root.join("app/models/form/variablecost_value.rb")
+# Import to "Form::IncomeValues"
+# require Rails.root.join("app/models/form/income_values.rb")
+# Import to "Form::FixedcostValues"
+# require Rails.root.join("app/models/form/fixedcost_values.rb")
+# Import to "Form::VariablecostValues"
+# require Rails.root.join("app/models/form/variablecost_values.rb")
