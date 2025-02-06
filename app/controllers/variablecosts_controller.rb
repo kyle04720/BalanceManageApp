@@ -8,7 +8,16 @@ class VariablecostsController < ApplicationController
   end
 
   def new
-    @variablecost = Variablecost.find(params[:id])
+    @variablecost = Variablecost.new()
+  end
+
+  def create
+    @variablecost = Variablecost.new(params[:variablecost])
+    if @variablecost.save
+      redirect_to @variablecost, notice: "支出カテゴリを登録しました"
+    else
+      render "new"
+    end
   end
 
   def edit
